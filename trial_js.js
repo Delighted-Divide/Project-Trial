@@ -5,18 +5,24 @@ var lists = document.querySelectorAll(".start li");
 lists.forEach(function (list) {
   list.addEventListener("click", function () {
     // Toggle the 'list-active' class on the clicked list
-    lists.forEach(function (inactivelist) {
-      inactivelist.firstElementChild.remove("icon-active");
-      inactivelist.classList.remove("li-active");
+    lists.forEach(function (inactiveList) {
+      inactiveList.firstElementChild.classList.remove("icon-active");
+      inactiveList.classList.remove("li-active");
     });
 
-    this.firstElementChild.toggle("icon-active");
+    this.firstElementChild.classList.toggle("icon-active");
     this.classList.add("li-active");
 
-    // if (parent.lastElementChild == this) {
-    //   console.log("hey");
-    // } else if (parent.firstElementChild == this) {
-    //   console.log("hi");
-    // }
+    if (this.parentElement.lastElementChild == this) {
+      this.style.borderRight = "none";
+      //   setTimeout(() => {
+      //     this.style.borderRight = "none";
+      //   }, 500);
+    } else if (this.parentElement.firstElementChild == this) {
+      this.style.borderLeft = "none";
+      //   setTimeout(() => {
+      //     this.style.borderLeft = "none";
+      //   }, 10);
+    }
   });
 });
