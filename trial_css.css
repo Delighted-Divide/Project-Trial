@@ -73,15 +73,19 @@ body {
 }
 
 /* user info --------------------------------------------------------------------------------------------------------------------*/
-#user {
+#User {
   margin: 10px;
-  display: flex;
 }
 
 #user_image {
   width: 50px;
   border-radius: 50%;
   float: left;
+}
+
+.user_info {
+  float: bottom;
+  vertical-align: bottom;
 }
 
 #logo {
