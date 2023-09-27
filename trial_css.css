@@ -141,10 +141,11 @@ body {
   list-style: none;
   width: 24.5%;
   margin: 10px;
+  cursor: pointer;
 }
 
-.start li:hover {
-  color: rgb(193, 98, 247);
+.start li i:active {
+  color: rgb(103, 125, 236);
 }
 
 /*icons info --------------------------------------------------------------------------------------------------------------------*/
