@@ -69,12 +69,14 @@ body {
   width: 200px;
   height: 100vh;
   position: fixed;
-  top: 70px;
+  top: 65px;
 }
 
 /* user info --------------------------------------------------------------------------------------------------------------------*/
 #User {
   margin: 10px;
+  display: flex;
+  align-items: flex-end;
 }
 
 #user_image {
@@ -82,12 +84,19 @@ body {
   border-radius: 50%;
   float: left;
 }
-
-.user_info {
-  float: bottom;
-  vertical-align: bottom;
+#user_info {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding-left: 10px;
 }
 
+#wel {
+  padding: 5px;
+}
+
+#Name {
+  font-weight: 600;
+}
 #logo {
   width: 60px;
 }
