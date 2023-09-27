@@ -10,6 +10,7 @@
 :root {
   --primary-color: rgb(28, 34, 45);
   --secondary-color: rgb(153, 153, 153);
+  --third-color: rgb(103, 125, 236);
 }
 
 body {
@@ -142,11 +143,23 @@ body {
   width: 24.5%;
   margin: 10px;
   cursor: pointer;
+  text-align: center;
+
 }
 
-.start li i:active {
-  color: rgb(103, 125, 236);
+.start .material-icons {
+  width: 24px;
+  height: 24px;
 }
+
+.start li i.icon-active {
+  color: var(--third-color);
+}
+
+.start li.li-active {
+  border: 2px solid var(--third-color);
+  border-bottom: none;
+
 
 /*icons info --------------------------------------------------------------------------------------------------------------------*/
 #icons .fas,
