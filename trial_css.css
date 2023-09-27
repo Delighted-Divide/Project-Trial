@@ -131,10 +131,26 @@ body {
   padding-bottom: 2px;
 }
 
+/*start --------------------------------------------------------------------------------------------------------------------*/
+.start {
+  display: flex;
+  flex-direction: row;
+}
+
+.start li {
+  list-style: none;
+  width: 24.5%;
+  margin: 10px;
+}
+
+.start li:hover {
+  color: rgb(193, 98, 247);
+}
+
 /*icons info --------------------------------------------------------------------------------------------------------------------*/
-.fas,
-.far,
-.material-icons {
+#icons .fas,
+#icons .far,
+#icons .material-icons {
   width: 24px;
   height: 24px;
   font-size: 22px;
