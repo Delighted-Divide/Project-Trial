@@ -3,6 +3,8 @@
   padding: 0px;
   font-family: sans-serif;
   box-sizing: border-box;
+  color: var(--secondary-color);
+  /* remove it later ^^^^^^^^^^*/
 }
 
 :root {
@@ -18,6 +20,8 @@ body {
   color: rgb(255, 255, 255);
   display: flex;
 }
+
+/* search bar -----------------------------------------------------------------------------------------------------------------*/
 
 #search-form {
   position: relative;
@@ -55,6 +59,18 @@ body {
   right: 10px;
   top: 48%;
   transform: translateY(-50%);
+}
+
+/* user info --------------------------------------------------------------------------------------------------------------------*/
+#user {
+  margin: 10px;
+  display: flex;
+}
+
+#user_image {
+  width: 50px;
+  border-radius: 50%;
+  float: left;
 }
 
 #logo {
