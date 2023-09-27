@@ -14,29 +14,34 @@ body {
   background-color: rgb(25, 31, 40);
 }
 .top-bar {
-  border: 2px solid rgb(219, 136, 136);
   background-color: var(--primary-color);
   color: rgb(255, 255, 255);
   display: flex;
+}
+
+#search-form {
   position: relative;
 }
 
 #search {
   margin-top: 10px;
-  font-size: 1.2em;
+  font-size: 1em;
   width: 250px;
   vertical-align: middle;
+  padding: 2px;
+  padding-left: 10px;
   line-height: 35px;
   background-color: var(--primary-color);
-  border: 0.2px solid white;
+  border: 0.2px solid rgb(153, 153, 153);
   border-radius: 5px;
   color: var(--secondary-color);
   position: relative;
-  transition: width 2s;
+  transition: width 1s;
 }
 
 #search:focus {
-  width: 300px;
+  width: 280px;
+  color: #48555e;
 }
 
 #search-button {
@@ -48,7 +53,7 @@ body {
   color: var(--secondary-color);
   position: absolute;
   right: 10px;
-  top: 50%;
+  top: 48%;
   transform: translateY(-50%);
 }
 
