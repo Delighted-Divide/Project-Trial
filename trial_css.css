@@ -5,12 +5,17 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-color: rgb(28, 34, 45);
+  --secondary-color: rgb(153, 153, 153);
+}
+
 body {
   background-color: rgb(25, 31, 40);
 }
 .top-bar {
   border: 2px solid rgb(219, 136, 136);
-  background-color: rgb(28, 34, 45);
+  background-color: var(--primary-color);
   color: rgb(255, 255, 255);
   display: flex;
 }
@@ -20,10 +25,18 @@ body {
   font-size: 1.2em;
   vertical-align: middle;
   line-height: 35px;
-  background-color: rgb(28, 34, 45);
+  background-color: var(--primary-color);
   border: 0.2px solid white;
   border-radius: 5px;
-  color: rgb(153, 153, 153);
+  color: var(--secondary-color);
+}
+
+#search-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  vertical-align: -webkit-baseline-middle;
+  color: var(--secondary-color);
 }
 
 #logo {
