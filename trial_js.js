@@ -10,7 +10,15 @@ icons.forEach(function (icon) {
       inactiveIcon.parentElement.classList.remove("li-active");
     });
 
+    let parent = this.parentElement;
+
     this.classList.toggle("icon-active");
-    this.parentElement.classList.add("li-active");
+    parent.classList.add("li-active");
+
+    if (parent.parentElement.lastElementChild == parent) {
+      console.log("hey");
+    } else if (parent.parentElement.firstElementChild == parent) {
+      console.log("hi");
+    }
   });
 });

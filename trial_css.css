@@ -140,10 +140,11 @@ body {
 
 .start li {
   list-style: none;
-  width: 24.5%;
-  margin: 10px;
+  width: 24.6%;
+  margin-top: 15px;
   cursor: pointer;
   text-align: center;
+  border-bottom: 2px solid var(--third-color);
 }
 
 .start .material-icons {
@@ -157,8 +158,10 @@ body {
 
 .start li.li-active {
   border: 2px solid var(--third-color);
-  border-bottom: none;
+  border-bottom: 2px solid var(--primary-color);
+  z-index: 2;
 }
+
 /*icons info --------------------------------------------------------------------------------------------------------------------*/
 #icons .fas,
 #icons .far,
