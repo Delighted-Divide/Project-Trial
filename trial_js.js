@@ -1,3 +1,7 @@
+let menu = document.getElementById("start").firstElementChild;
+menu.firstElementChild.classList.toggle("icon-active");
+menu.classList.add("li-active");
+
 // Get all the lists in the start bar
 var lists = document.querySelectorAll(".start li");
 

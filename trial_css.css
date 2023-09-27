@@ -16,12 +16,14 @@
 
 body {
   background-color: rgb(25, 31, 40);
+  border: 2px solid var(--third-color);
 }
 .top-bar {
   background-color: var(--primary-color);
   color: rgb(255, 255, 255);
   display: flex;
   position: fixed;
+  width: 100%;
 }
 
 /* search bar -----------------------------------------------------------------------------------------------------------------*/
@@ -192,8 +194,17 @@ body {
   padding: 7px 5px;
   list-style: none;
   cursor: pointer;
+  vertical-align: bottom;
+  display: flex;
+  align-items: center;
 }
 
 #icons a i {
   margin: 10px;
+  margin-right: 16px;
+  vertical-align: middle;
+}
+
+#icons a:hover {
+  border: 2px solid var(--third-color);
 }
