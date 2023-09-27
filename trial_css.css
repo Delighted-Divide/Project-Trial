@@ -73,30 +73,43 @@ body {
 }
 
 /* user info --------------------------------------------------------------------------------------------------------------------*/
+
+#logo {
+  width: 60px;
+}
 #User {
-  margin: 10px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  padding: 10px; /* Light gray background for the user div */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.user-image-container {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Circular container */
+  overflow: hidden; /* To ensure the image fits within the circular container */
+  margin-right: 10px; /* Space between image and text */
 }
 
 #user_image {
-  width: 50px;
-  border-radius: 50%;
-  float: left;
-}
-#user_info {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  padding-left: 10px;
+  width: 100%;
+  height: 100%;
 }
 
-#wel {
-  padding: 5px;
+.user-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align text to the left */
 }
 
-#Name {
-  font-weight: 600;
+.welcome-text {
+  font-size: 14px;
+  margin-bottom: 2px; /* Small space between welcome text and username */
 }
-#logo {
-  width: 60px;
+
+.username {
+  font-size: 18px;
+  font-weight: bold;
 }
