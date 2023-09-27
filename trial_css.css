@@ -144,7 +144,6 @@ body {
   margin: 10px;
   cursor: pointer;
   text-align: center;
-
 }
 
 .start .material-icons {
@@ -159,8 +158,7 @@ body {
 .start li.li-active {
   border: 2px solid var(--third-color);
   border-bottom: none;
-
-
+}
 /*icons info --------------------------------------------------------------------------------------------------------------------*/
 #icons .fas,
 #icons .far,
