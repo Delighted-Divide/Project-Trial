@@ -29,6 +29,12 @@ body {
   border: 0.2px solid white;
   border-radius: 5px;
   color: var(--secondary-color);
+  position: relative;
+  transition: width 0.5s;
+}
+
+#search:focus {
+  width: 300px;
 }
 
 #search-button {
@@ -36,7 +42,11 @@ body {
   background: none;
   cursor: pointer;
   vertical-align: -webkit-baseline-middle;
+  position: absolute;
   color: var(--secondary-color);
+  left: 280px; /* Position it 5px from the right inside the input */
+  top: 30px; /* Center it vertically */
+  transform: translateY(-50%);
 }
 
 #logo {
