@@ -235,5 +235,6 @@ footer {
 }
 
 #icons a:hover {
-  border: 2px solid var(--third-color);
+  border-left: 2px solid var(--third-color);
+  background-color: rgb(17, 17, 17);
 }
