@@ -80,6 +80,18 @@ color_lists.forEach(function (list) {
 // _________________________________________________________________________________________________________________________________________
 // _________________________________________________________________________________________________________________________________________
 // _________________________________________________________________________________________________________________________________________
+function navBarOut(nav, con) {
+  nav.style.left = "-250px";
+  con.style.left = "0";
+  con.style.width = "100%";
+}
+
+function navBarIn(nav, con) {
+  nav.style.left = "0px";
+  con.style.left = "250px";
+  con.style.width = "calc(100% - 250px)";
+}
+
 window.addEventListener("resize", function () {
   const navBar = document.getElementById("nav-bar");
   const mainContent = document.getElementById("main_content");
@@ -91,13 +103,9 @@ window.addEventListener("resize", function () {
   const thresholdPercentage = 60;
 
   if (widthPercentage <= thresholdPercentage) {
-    navBar.style.left = "-250px";
-    mainContent.style.left = "0";
-    mainContent.style.width = "100%";
+    navBarOut(navBar, mainContent);
   } else {
-    navBar.style.left = "0px";
-    mainContent.style.left = "250px";
-    mainContent.style.width = "calc(100% - 250px)";
+    navBarIn(navBar, mainContent);
   }
 });
 window.dispatchEvent(new Event("resize"));
