@@ -1,4 +1,7 @@
 // Initial start ups of the app
+// Nav start up
+let navOpen = true;
+
 // Menu start up
 let menu = document.getElementById("start").firstElementChild;
 menu.firstElementChild.classList.toggle("icon-active");
@@ -102,9 +105,9 @@ window.addEventListener("resize", function () {
   // Set a threshold percentage, e.g., 70%. Adjust this value as needed.
   const thresholdPercentage = 60;
 
-  if (widthPercentage <= thresholdPercentage) {
+  if (widthPercentage <= thresholdPercentage && navOpen) {
     navBarOut(navBar, mainContent);
-  } else {
+  } else if (navOpen) {
     navBarIn(navBar, mainContent);
   }
 });
@@ -117,10 +120,16 @@ window.dispatchEvent(new Event("resize"));
 // _________________________________________________________________________________________________________________________________________
 // _________________________________________________________________________________________________________________________________________
 var removeNav = document.querySelector("#page-title i");
-removeNav.addEventListener("click", () => {
+removeNav.addEventListener("click", function () {
   const navBar = document.getElementById("nav-bar");
   const mainContent = document.getElementById("main_content");
   console.log(this);
-  this.className = "fas fa-arrow-right";
-  navBarOut(navBar, mainContent);
+  if (navOpen) {
+    this.className = "fas fa-arrow-right";
+    navBarOut(navBar, mainContent);
+  } else {
+    this.className = "fas fa-arrow-left";
+    navBarIn(navBar, mainContent);
+  }
+  navOpen = !navOpen;
 });
