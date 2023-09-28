@@ -92,17 +92,10 @@ window.addEventListener("resize", function () {
 
   if (widthPercentage <= thresholdPercentage) {
     navBar.style.left = "-250px";
-    // setTimeout(() => {
-    //   document.getElementById("nav-bar").style.display = "none";
-    // }, 100);
     mainContent.style.left = "0";
     mainContent.style.width = "100%";
   } else {
     navBar.style.left = "0px";
-    // document.getElementById("nav-bar").style.display = "block";
-    // setTimeout(() => {
-    //   document.getElementById("nav-bar").style.left = "0px";
-    // }, 500);
     mainContent.style.left = "250px";
     mainContent.style.width = "calc(100% - 250px)";
   }
