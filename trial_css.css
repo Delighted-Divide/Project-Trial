@@ -298,3 +298,8 @@ footer {
   top: -5px;
   left: 2px;
 }
+
+#main_content {
+  flex: 1;
+  background-color: white;
+}
