@@ -12,6 +12,7 @@
   --secondary-color: rgb(153, 153, 153);
   --third-color: rgb(103, 125, 236);
   --fourth-color: rgb(18, 21, 27);
+  --lay: 4px;
 }
 
 body {
@@ -24,8 +25,8 @@ body {
   position: fixed;
   background-color: var(--third-color);
   height: 150%;
-  width: 2px;
-  top: 0px;
+  width: var(--lay);
+  top: 5px;
   right: 0px;
   z-index: 1;
 }
@@ -34,15 +35,16 @@ body {
   position: fixed;
   background-color: var(--third-color);
   height: 150%;
-  width: 2px;
-  top: 0px;
+  width: var(--lay);
+  top: 3px;
   left: 0px;
+  z-index: 1;
 }
 
 footer {
   position: absolute;
   width: 100%;
-  height: 2px;
+  height: var(--lay);
   bottom: 0px;
   background-color: var(--third-color);
 }
@@ -53,7 +55,7 @@ footer {
   display: flex;
   position: fixed;
   width: 100%;
-  border-top: 2px solid var(--third-color);
+  border-top: var(--lay) solid var(--third-color);
 }
 
 /* search bar -----------------------------------------------------------------------------------------------------------------*/
