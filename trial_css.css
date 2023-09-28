@@ -243,7 +243,12 @@ footer {
 
 /*setting info --------------------------------------------------------------------------------------------------------------------*/
 #setting {
+  margin-top: 18px;
   margin: 10px;
+}
+
+#setting h3 {
+  margin-top: 5px;
 }
 
 #setting #colors {
@@ -254,8 +259,10 @@ footer {
 #setting #colors li {
   display: flex;
   flex-direction: row;
-  margin: 20px;
-  vertical-align: top;
+  margin: 2px;
+  margin-left: 0px;
+  vertical-align: middle;
+  line-height: 2em;
 }
 
 #setting #colors li div {
@@ -264,4 +271,8 @@ footer {
   border-radius: 50%;
   display: inline-block;
   margin: 5px;
+}
+
+#setting #colors li:active {
+  background-color: #48555e;
 }
