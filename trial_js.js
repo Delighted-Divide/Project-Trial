@@ -8,6 +8,16 @@ menu.classList.add("li-active");
 let page_color = document.querySelectorAll("#colors li")[1];
 page_color.classList.add("li-active");
 
+console.log(window.innerHeight);
+console.log(window.innerWidth);
+
+window.addEventListener("resize", function () {
+  screenWidth = window.innerWidth;
+  screenHeight = window.innerHeight;
+
+  console.log(`Screen size changed to: ${screenWidth}x${screenHeight}`);
+});
+
 // _________________________________________________________________________________________________________________________________________
 // _________________________________________________________________________________________________________________________________________
 // _________________________________________________________________________________________________________________________________________
@@ -26,7 +36,6 @@ lists.forEach(function (list) {
     lists.forEach(function (inactiveList) {
       inactiveList.firstElementChild.classList.remove("icon-active");
       inactiveList.classList.remove("li-active");
-      console.log(inactiveList.firstElementChild.innerHTML);
       var chosen_bar = document.querySelector(
         `#${inactiveList.firstElementChild.innerHTML}`
       );
@@ -81,7 +90,3 @@ color_lists.forEach(function (list) {
 // _________________________________________________________________________________________________________________________________________
 // _________________________________________________________________________________________________________________________________________
 // _________________________________________________________________________________________________________________________________________
-
-var options = document.querySelectorAll("nav ul");
-var options = document.querySelectorAll(".start li");
-console.log(options);
