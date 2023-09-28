@@ -54,14 +54,14 @@
 
     <!-- Material Icons -->
     <ul id = "start" class="start">
-        <li><i class="material-icons">menu</i> </li>
-        <li><i class="material-icons">bar_chart</i> </li>
-        <li><i class="material-icons">history</i> </li>
-        <li><i class="material-icons">settings</i> </li>
+        <li data-target="icons"><i class="material-icons">menu</i> </li>
+        <li data-target="Graphs"><i class="material-icons">bar_chart</i> </li>
+        <li data-target="History"><i class="material-icons">history</i> </li>
+        <li data-target="Settings"><i class="material-icons">settings</i> </li>
     </ul>
     </div>
     <nav>
-      <ul id = "icons">
+      <ul id = "icons" style="display: none;">
         <a><i class="fas fa-chart-line"></i> Dashboard</a>
         <a><i class="fas fa-calendar-check"></i> Appointments</a>
         <a><i class="fas fa-user-md"></i> Doctors</a>
@@ -72,12 +72,21 @@
         <a><i class="fas fa-flask"></i> Laboratory</a>  
         
       </ul>
+      <ul id = "setting">
+        <h4>Choose Skin</h4>
+        <div id="colors">
+        <li><div style="background-color: rgb(162,124,230);"></div>Purple</li>
+        <li><div style="background-color: rgb(103, 125, 236);"></div>BLue</li>
+        <li><div style="background-color: rgb(80,211,138);"></div>Green</li>
+        <li><div style="background-color: red;"></div>Red</li>
+        </div>
+      </ul>
     </nav>
       
         </div>
       </div>
     </div>
-    <footer><div id = 'bottom'></div></footer>
+    <footer></footer>
     <script src = "trial_js.js"></script>
   </body>
 </html>

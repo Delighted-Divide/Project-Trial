@@ -18,6 +18,7 @@ body {
   background-color: rgb(25, 31, 40);
   margin: 2px;
   z-index: 1;
+  overflow-x: hidden;
 }
 #right {
   position: fixed;
@@ -59,6 +60,7 @@ footer {
 
 #search-form {
   position: relative;
+  left: 6%;
 }
 
 #search {
@@ -237,4 +239,29 @@ footer {
 #icons a:hover {
   border-left: 2px solid var(--third-color);
   background-color: rgb(17, 17, 17);
+}
+
+/*setting info --------------------------------------------------------------------------------------------------------------------*/
+#setting {
+  margin: 10px;
+}
+
+#setting #colors {
+  display: flex;
+  flex-direction: column;
+}
+
+#setting #colors li {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  vertical-align: top;
+}
+
+#setting #colors li div {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 5px;
 }
