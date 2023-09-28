@@ -20,6 +20,7 @@ body {
   margin: 2px;
   z-index: 1;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 #right {
   position: fixed;
@@ -47,6 +48,7 @@ footer {
   height: var(--lay);
   bottom: 0px;
   background-color: var(--third-color);
+  margin: 0px;
 }
 
 .top-bar {
@@ -305,6 +307,11 @@ footer {
 }
 
 #main_content {
-  flex: 1;
-  background-color: white;
+  flex-grow: 1;
+  background-color: rgb(25, 31, 40);
+  top: 65px;
+  left: 250px;
+  width: calc(100% - 250px);
+  height: calc(100vh - 65px);
+  position: relative;
 }
