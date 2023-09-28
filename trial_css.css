@@ -62,6 +62,24 @@ footer {
   z-index: 1;
 }
 
+#page-title {
+  display: flex;
+  vertical-align: middle;
+  color: var(--third-color);
+}
+
+#page-title > * {
+  color: var(--third-color);
+}
+
+#page-title i {
+  vertical-align: bottom;
+  padding-top: 5px;
+  margin-right: 10px;
+  color: var(--third-color);
+  cursor: pointer;
+}
+
 /* search bar -----------------------------------------------------------------------------------------------------------------*/
 
 #search-form {
@@ -218,7 +236,7 @@ footer {
   z-index: 2;
 }
 
-/*icons info --------------------------------------------------------------------------------------------------------------------*/
+/*menu info --------------------------------------------------------------------------------------------------------------------*/
 #menu .fas,
 #menu .far {
   width: 24px;
@@ -317,4 +335,12 @@ footer {
   height: calc(100vh - 65px);
   position: relative;
   margin: 30px;
+  display: flex;
+  flex-direction: column;
+  transition: left 3 ease;
+}
+
+#content {
+  position: relative;
+  flex-grow: 1;
 }

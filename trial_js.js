@@ -91,14 +91,14 @@ window.addEventListener("resize", function () {
   const thresholdPercentage = 60;
 
   if (widthPercentage <= thresholdPercentage) {
-    document.getElementById("nav-bar").style.left = "-250px";
+    navBar.style.left = "-250px";
     // setTimeout(() => {
     //   document.getElementById("nav-bar").style.display = "none";
     // }, 100);
     mainContent.style.left = "0";
     mainContent.style.width = "100%";
   } else {
-    document.getElementById("nav-bar").style.left = "0px";
+    navBar.style.left = "0px";
     // document.getElementById("nav-bar").style.display = "block";
     // setTimeout(() => {
     //   document.getElementById("nav-bar").style.left = "0px";
@@ -107,5 +107,6 @@ window.addEventListener("resize", function () {
     mainContent.style.width = "calc(100% - 250px)";
   }
 });
+window.dispatchEvent(new Event("resize"));
 
 // Call the resize function once to handle cases where the page is loaded in a shrunk form
