@@ -203,28 +203,28 @@ footer {
 }
 
 /*icons info --------------------------------------------------------------------------------------------------------------------*/
-#icons .fas,
-#icons .far {
+#menu .fas,
+#menu .far {
   width: 24px;
   height: 24px;
   font-size: 24px;
   color: var(--third-color);
 }
 
-#icons .material-icons {
+#menu .material-icons {
   width: 24px;
   height: 24px;
   font-size: 30px;
   color: var(--third-color);
 }
 
-#icons {
+#menu {
   margin-top: 10px;
   display: flex;
   flex-direction: column;
 }
 
-#icons a {
+#menu a {
   margin: 5px 0px;
   padding: 7px 5px;
   list-style: none;
@@ -234,13 +234,13 @@ footer {
   align-items: center;
 }
 
-#icons a i {
+#menu a i {
   margin: 10px;
   margin-right: 16px;
   vertical-align: middle;
 }
 
-#icons a:hover {
+#menu a:hover {
   border-left: 5px solid var(--third-color);
   background-color: rgb(17, 17, 17);
 }
@@ -249,10 +249,13 @@ footer {
 #settings {
   margin-top: 18px;
   margin: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 #settings h3 {
   margin-top: 5px;
+  display: block;
 }
 
 #settings #colors {

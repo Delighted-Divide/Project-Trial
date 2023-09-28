@@ -26,14 +26,20 @@ lists.forEach(function (list) {
     lists.forEach(function (inactiveList) {
       inactiveList.firstElementChild.classList.remove("icon-active");
       inactiveList.classList.remove("li-active");
+      console.log(inactiveList.firstElementChild.innerHTML);
+      var chosen_bar = document.querySelector(
+        `#${inactiveList.firstElementChild.innerHTML}`
+      );
+      chosen_bar.style.display = "none";
     });
 
     this.firstElementChild.classList.toggle("icon-active");
     this.classList.add("li-active");
-    req = this.firstElementChild.innerHTML;
-    console.log(`#${req}`);
-    var chosen_bar = document.querySelector(`#${req}`);
-    chosen_bar.style.display = "block";
+
+    var chosen_bar = document.querySelector(
+      `#${this.firstElementChild.innerHTML}`
+    );
+    chosen_bar.style.display = "flex";
 
     if (this.parentElement.lastElementChild == this) {
       this.style.borderRight = "none";
