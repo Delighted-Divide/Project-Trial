@@ -90,3 +90,25 @@ color_lists.forEach(function (list) {
 // _________________________________________________________________________________________________________________________________________
 // _________________________________________________________________________________________________________________________________________
 // _________________________________________________________________________________________________________________________________________
+window.addEventListener("resize", function () {
+  const navBar = document.getElementById("nav-bar");
+  const mainContent = document.getElementById("main_content");
+
+  // Calculate the percentage of the current window width relative to the screen's width
+  const widthPercentage = (window.innerWidth / screen.width) * 100;
+
+  // Set a threshold percentage, e.g., 70%. Adjust this value as needed.
+  const thresholdPercentage = 60;
+
+  if (widthPercentage <= thresholdPercentage) {
+    navBar.style.display = "none";
+    mainContent.style.left = "0";
+    mainContent.style.width = "100%";
+  } else {
+    navBar.style.display = "block";
+    mainContent.style.left = "250px";
+    mainContent.style.width = "calc(100% - 250px)";
+  }
+});
+
+// Call the resize function once to handle cases where the page is loaded in a shrunk form
