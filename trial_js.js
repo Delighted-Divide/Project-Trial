@@ -46,3 +46,19 @@ lists.forEach(function (list) {
 // _________________________________________________________________________________________________________________________________________
 // _________________________________________________________________________________________________________________________________________
 // _________________________________________________________________________________________________________________________________________
+
+var color_lists = document.querySelectorAll("#colors li");
+color_lists.forEach(function (list) {
+  list.addEventListener("click", function () {
+    color_lists.forEach(function (inactiveList) {
+      inactiveList.classList.remove("li-active");
+    });
+    console.log(typeof this.firstElementChild.style.backgroundColor);
+    document.documentElement.style.setProperty(
+      "--third-color",
+      this.firstElementChild.style.backgroundColor
+    );
+    this.classList.add("li-active");
+  });
+});
+console.log(color_lists);
