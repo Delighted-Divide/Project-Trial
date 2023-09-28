@@ -4,6 +4,11 @@ let menu = document.getElementById("start").firstElementChild;
 menu.firstElementChild.classList.toggle("icon-active");
 menu.classList.add("li-active");
 
+//color setup
+let page_color = document.querySelectorAll("#colors li")[1];
+page_color.classList.add("li-active");
+console.log(page_color);
+
 // _________________________________________________________________________________________________________________________________________
 // _________________________________________________________________________________________________________________________________________
 // _________________________________________________________________________________________________________________________________________

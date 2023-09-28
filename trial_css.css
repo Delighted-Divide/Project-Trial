@@ -28,7 +28,7 @@ body {
   width: var(--lay);
   top: 5px;
   right: 0px;
-  z-index: 1;
+  z-index: 2;
 }
 
 #left {
@@ -38,7 +38,7 @@ body {
   width: var(--lay);
   top: 3px;
   left: 0px;
-  z-index: 1;
+  z-index: 2;
 }
 
 footer {
@@ -56,6 +56,8 @@ footer {
   position: fixed;
   width: 100%;
   border-top: var(--lay) solid var(--third-color);
+  border-bottom: 1px solid rgb(18, 21, 27);
+  z-index: 1;
 }
 
 /* search bar -----------------------------------------------------------------------------------------------------------------*/
@@ -275,6 +277,14 @@ footer {
   margin: 5px;
 }
 
-#setting #colors li:active {
-  background-color: #48555e;
+#setting #colors li.li-active i {
+  display: inline;
+}
+
+#colors div i {
+  color: white;
+  display: none;
+  position: relative;
+  top: -5px;
+  left: 2px;
 }
