@@ -30,6 +30,10 @@ lists.forEach(function (list) {
 
     this.firstElementChild.classList.toggle("icon-active");
     this.classList.add("li-active");
+    req = this.firstElementChild.innerHTML;
+    console.log(`#${req}`);
+    var chosen_bar = document.querySelector(`#${req}`);
+    chosen_bar.style.display = "block";
 
     if (this.parentElement.lastElementChild == this) {
       this.style.borderRight = "none";
@@ -73,4 +77,5 @@ color_lists.forEach(function (list) {
 // _________________________________________________________________________________________________________________________________________
 
 var options = document.querySelectorAll("nav ul");
+var options = document.querySelectorAll(".start li");
 console.log(options);

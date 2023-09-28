@@ -245,22 +245,22 @@ footer {
   background-color: rgb(17, 17, 17);
 }
 
-/*setting info --------------------------------------------------------------------------------------------------------------------*/
-#setting {
+/*settings info --------------------------------------------------------------------------------------------------------------------*/
+#settings {
   margin-top: 18px;
   margin: 10px;
 }
 
-#setting h3 {
+#settings h3 {
   margin-top: 5px;
 }
 
-#setting #colors {
+#settings #colors {
   display: flex;
   flex-direction: column;
 }
 
-#setting #colors li {
+#settings #colors li {
   display: flex;
   flex-direction: row;
   margin: 2px;
@@ -269,7 +269,7 @@ footer {
   line-height: 2em;
 }
 
-#setting #colors li div {
+#settings #colors li div {
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -277,7 +277,7 @@ footer {
   margin: 5px;
 }
 
-#setting #colors li.li-active i {
+#settings #colors li.li-active i {
   display: inline;
 }
 
