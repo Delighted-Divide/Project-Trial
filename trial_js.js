@@ -8,16 +8,6 @@ menu.classList.add("li-active");
 let page_color = document.querySelectorAll("#colors li")[1];
 page_color.classList.add("li-active");
 
-console.log(window.innerHeight);
-console.log(window.innerWidth);
-
-window.addEventListener("resize", function () {
-  screenWidth = window.innerWidth;
-  screenHeight = window.innerHeight;
-
-  console.log(`Screen size changed to: ${screenWidth}x${screenHeight}`);
-});
-
 // _________________________________________________________________________________________________________________________________________
 // _________________________________________________________________________________________________________________________________________
 // _________________________________________________________________________________________________________________________________________
@@ -101,11 +91,18 @@ window.addEventListener("resize", function () {
   const thresholdPercentage = 60;
 
   if (widthPercentage <= thresholdPercentage) {
-    navBar.style.display = "none";
+    document.getElementById("nav-bar").style.left = "-250px";
+    // setTimeout(() => {
+    //   document.getElementById("nav-bar").style.display = "none";
+    // }, 100);
     mainContent.style.left = "0";
     mainContent.style.width = "100%";
   } else {
-    navBar.style.display = "block";
+    document.getElementById("nav-bar").style.left = "0px";
+    // document.getElementById("nav-bar").style.display = "block";
+    // setTimeout(() => {
+    //   document.getElementById("nav-bar").style.left = "0px";
+    // }, 500);
     mainContent.style.left = "250px";
     mainContent.style.width = "calc(100% - 250px)";
   }

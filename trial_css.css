@@ -117,12 +117,14 @@ footer {
 
 /* NAV BAR --------------------------------------------------------------------------------------------------------------------------------*/
 #nav-bar {
-  display: -ms-flexbox;
+  display: block;
   background-color: var(--primary-color);
   width: 250px;
   height: 100vh;
   position: fixed;
   top: 65px;
+
+  transition: left 0.5s ease;
 }
 
 /* user info --------------------------------------------------------------------------------------------------------------------*/
@@ -314,4 +316,5 @@ footer {
   width: calc(100% - 250px);
   height: calc(100vh - 65px);
   position: relative;
+  margin: 30px;
 }
